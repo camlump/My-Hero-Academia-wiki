@@ -6,7 +6,7 @@ const students = new mongoose.Schema({
     gender: {
         type: String,
         required: true,
-        enum: ['Male', 'Female', 'unkown'],
+        enum: ['Male', 'Female', 'unknown'],
     },
 
      school: {
@@ -14,6 +14,15 @@ const students = new mongoose.Schema({
             required: true,
             enum: [ 'U. A. High School', 'Shiketsu High School', 'Ketsubutsu Academy High Scool', 'Masegaki Primary School', 'Seiai Academy', 'Aldera Junior High'],
         },
+
+    class: {
+            type: String,
+
+            required: true,
+
+            enum: ['1-A', '1-B', 'known'],
+        },
+    
 
     overview: {
         type: String,

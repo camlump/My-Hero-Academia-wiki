@@ -7,7 +7,7 @@ const heroes = new mongoose.Schema({
         
         required: true,
 
-        enum: ['male', 'female', 'unkown'],
+        enum: ['male', 'female', 'unknown'],
 
     },
 
