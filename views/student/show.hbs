@@ -2,11 +2,11 @@
 
 <div class="student-container-show">
     <div class="student-img-show">
-    <img src="{{ students.img}}"/>
+    <img src="{{ student.img}}"/>
     </div>
 
     <h2>
-        {{ students.name}}
+        {{ student.name}}
 
     </h2>
     <br>
@@ -19,7 +19,7 @@
     <h3>School</h3>
    
     <p>
-        {{ students.school}}
+        {{ student.school}}
     </p>
 
     <br>
@@ -27,32 +27,32 @@
     <h3>Class</h3>
 
     <p>
-        {{ students.class }}
+        {{ student.class }}
     </p>
     <br>
 
     <h3>Overview</h3>
 
     <p>
-        {{ students.overview }}
+        {{ student.overview }}
     </p>
 
     <br>
     <h3>quirk</h3>
 
     <p>
-        {{ students.quirk }}
+        {{ student.quirk }}
     </p>
 
     <h3>quirk Analysis</h3>
 
     <p>
-        {{ students.quirkDescription }}
+        {{ student.quirkDescription }}
     </p>
 
 </div>
 
-<a href="/newStudent">Create a new student</a>
+<a href="/students/{{ student.id }}/edit">Edit This student</a>
 
 
 

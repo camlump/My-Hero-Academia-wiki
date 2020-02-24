@@ -3,9 +3,12 @@
 
     {{#each students }} 
     <div class="student-container">
+        <a href="/students/{{ id }}">
         <img src="{{ img }}"/>
 
-		<h3><a href="{{ id }}">{{ name }}</a></h3>
+        </a>
+
+		<h3><a href="/students/{{ id }}">{{ name }}</a></h3>
 
     </div>
 

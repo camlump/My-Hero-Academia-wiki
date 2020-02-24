@@ -14,6 +14,15 @@ studentRouter.get('/', (req, res)=>{
 
 studentRouter.get('/newStudent', (req, res)=>{
     res.render('student/newStudent')
+});
+
+studentRouter.post('/', (req, res)=>{
+    student.create(req.body).then(()=>{
+        res.redirect('/')
+
+    }).catch((err)=>{
+        console.log(err)
+    })
 })
 
 
@@ -24,9 +33,9 @@ studentRouter.get('/:id', (req, res)=>{
     });
 });
 
-studentRouter.get('/:/edit', (req, res)=> {
+studentRouter.get('/:id/edit', (req, res)=> {
     student.findById(req.params.id).then((student)=>{
-        res.render('students/editStudentForm', { student });
+        res.render('student/editStudentForm', { student });
     });
 });
 
