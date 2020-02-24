@@ -12,6 +12,11 @@ studentRouter.get('/', (req, res)=>{
     });
 });
 
+studentRouter.get('/newStudent', (req, res)=>{
+    res.render('student/newStudent')
+})
+
+
 studentRouter.get('/:id', (req, res)=>{
     student.findById(req.params.id).then((student)=>{
         console.log(student)
@@ -19,8 +24,11 @@ studentRouter.get('/:id', (req, res)=>{
     });
 });
 
-studentRouter.get('/newStudent', (req, res)=>{
-    res.render('/student/newStudent')
-})
+studentRouter.get('/:/edit', (req, res)=> {
+    student.findById(req.params.id).then((student)=>{
+        res.render('students/editStudentForm', { student });
+    });
+});
+
 
 module.exports = studentRouter;

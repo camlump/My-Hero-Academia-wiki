@@ -1,6 +1,19 @@
 <main>
     <h2>Create a new Student</h2>
-    <form action="">
+    <form action="/students" method="POST">
+            name:<input type="text" name="name" placeholder="name"/><br>
+			Gender:<select name="Gender">
+                  <option value="unknown">Unknown</option>
+                 <option value="Male">male</option>
+                 <option value="Female">Female</option>
+            </select><br>
+            class:<input type="text" name="name" placeholder="class"/><br>
+			school:<input type="text" name="gender" placeholder="school"/><br>
+			img:<input type="text" name="img" placeholder="img"/><br>
+			overview:<input type="text" name="overview" placeholder="overview"/><br>
+			quirk: <input type="text" name="quirk" placeholder="quirk"/><br>
+            quirk Description: <input type="text" name="quirkDescription" placeholder="quirk Description"/><br>
+			<input type="submit" value="Add student"/><br>
 
     </form>
 </main>
