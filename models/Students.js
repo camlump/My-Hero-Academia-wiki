@@ -3,10 +3,23 @@
 const mongoose = require('../db/connection.js')
 
 const students = new mongoose.Schema({
+    
+    name: {
+        type: String,
+
+        required: true,
+    },
+
     gender: {
         type: String,
         required: true,
         enum: ['Male', 'Female', 'unknown'],
+    },
+
+    img: {
+        type: String,
+
+        required: true,
     },
 
      school: {

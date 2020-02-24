@@ -3,12 +3,26 @@ const mongoose = require('../db/connection.js')
 
 
 const villain = new mongoose.Schema({
+
+    name: {
+        type: String,
+
+        required: true,
+    },
+
+
     gender: {
         type: String,
 
         required: true,
 
         enum: ['male', 'female', 'unknown'],
+    },
+
+    img: {
+        type: String,
+
+        required: true,
     },
 
     legalStatus: {
@@ -45,6 +59,6 @@ const villain = new mongoose.Schema({
         },
 
 
+});
 
-
-})
+module.exports = mongoose.model('villain', villain)

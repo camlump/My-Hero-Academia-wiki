@@ -2,6 +2,14 @@ const mongoose = require('../db/connection.js')
 
 
 const heroes = new mongoose.Schema({
+    
+    heroName: {
+        type: String,
+
+        required: true,
+    },
+    
+    
     gender: {
         type: String,
         
@@ -9,6 +17,12 @@ const heroes = new mongoose.Schema({
 
         enum: ['male', 'female', 'unknown'],
 
+    },
+
+    img: {
+        type: String,
+
+        required: true,
     },
 
     teacher: {
