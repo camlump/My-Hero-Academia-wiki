@@ -18,7 +18,7 @@ heroRouter.get('/newHeroes', (req, res)=>{
 
 heroRouter.post('/', (req, res)=>{
     hero.create(req.body).then(()=>{
-        res.redirect('/')
+        res.redirect('/heroes')
 
     }).catch((err)=>{
         console.log(err)
@@ -49,7 +49,7 @@ heroRouter.get('/:id/edit', (req, res)=> {
 
 heroRouter.delete('/:id', (req, res)=>{
     hero.findByIdAndRemove(req.params.id).then(()=>{
-        res.redirect('/')
+        res.redirect('/heroes')
     });
 });
 
