@@ -1,10 +1,14 @@
-<main>
+<main class="indexPage">
+    <div class="indextitle">
     <h1>The Future of the hero world</h1>
+<a href="/students/newStudent">Create a new student</a>
+
+    </div>
 
     {{#each students }} 
-    <div class="student-container">
+    <div class="index-container">
         <a href="/students/{{ id }}">
-        <img src="{{ img }}"/>
+        <img class="indexImg" src="{{ img }}"/>
 
         </a>
 
@@ -15,5 +19,4 @@
     {{/each}}
 
 
-<a href="/students/newStudent">Create a new student</a>
 </main>

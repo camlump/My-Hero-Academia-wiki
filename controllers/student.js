@@ -18,7 +18,7 @@ studentRouter.get('/newStudent', (req, res)=>{
 
 studentRouter.post('/', (req, res)=>{
     student.create(req.body).then(()=>{
-        res.redirect('/')
+        res.redirect('/students')
 
     }).catch((err)=>{
         console.log(err)

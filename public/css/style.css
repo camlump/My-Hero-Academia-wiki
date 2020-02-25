@@ -1,0 +1,22 @@
+.indextitle{
+    display: inline-block;
+}
+
+.indexPage{
+    
+    grid-template-columns:repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    margin: 0 auto;
+}
+
+
+.indexImg{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+
+    border:solid 3px #eeeeee;
+}
+
+
+
