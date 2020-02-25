@@ -19,7 +19,6 @@ studentRouter.get('/newStudent', (req, res)=>{
 studentRouter.post('/', (req, res)=>{
     student.create(req.body).then(()=>{
         res.redirect('/students')
-
     }).catch((err)=>{
         console.log(err)
     })
@@ -33,11 +32,6 @@ studentRouter.get('/:id', (req, res)=>{
     });
 });
 
-studentRouter.put('/:id', (req, res)=>{
-    student.findByIdAndUpdate(req.params.id, req.body).then((student)=>{
-        res.redirect('/students/' + student.id);
-    });
-});
 
 studentRouter.get('/:id/edit', (req, res)=> {
     student.findById(req.params.id).then((student)=>{
@@ -47,7 +41,14 @@ studentRouter.get('/:id/edit', (req, res)=> {
 
 studentRouter.delete('/:id', (req, res)=>{
     student.findByIdAndRemove(req.params.id).then(()=>{
-        res.redirect('/')
+        res.redirect('/students');
+    });
+});
+
+
+studentRouter.put('/:id', (req, res)=>{
+    student.findByIdAndUpdate(req.params.id, req.body).then((student)=>{
+        res.redirect('/students/' + student.id);
     });
 });
 

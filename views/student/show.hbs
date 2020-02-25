@@ -54,8 +54,9 @@
 
 <a href="/students/{{ student.id }}/edit">Edit This student</a>
 
-<form action="/{{ student.id }}?_method=DELETE" method="POST">
+<form method="POST" action="/students/{{ student.id }}?_method=DELETE">
 <input type="submit" value="Delete student">
+</form>
 
 
 

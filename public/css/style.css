@@ -1,19 +1,75 @@
-.indextitle{
-    display: inline-block;
+.nav-item{
+    color: white;
 }
 
-.indexPage{
+
+/* index title text */
+.indextitle{
+    display: grid;
+    grid-template-columns:repeat(1,1hr);
+    grid-template-rows: repeat(1, 1hr);
+    text-align: center;
+    padding: 30px;
+
     
-    grid-template-columns:repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    margin: 0 auto;
+}
+
+.indextitle h1{
+    font-family: 'Bangers';
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+.indextitle a{
+    font-family: 'Asap';
+    letter-spacing: 3px;
+    font-size: 32;
+    text-decoration: none;
+    color: cornflowerblue;
+
+}
+.indextitle a:hover{
+    color: crimson;
+}
+
+
+.indextitle h1 {
+    float: left;
+
+}
+
+.indextitle a {
+    padding-right: 40px;
+    float: right;
+}
+/* end of indext title text */
+.columns {
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-template-rows: repeat(8, 1fr);
+   grid-gap: 8px;
+   text-align: center;
+
+    
+    
+}
+
+    
+
+
+.indexPage h3 a {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: '';
+    
 }
 
 
 .indexImg{
     width: 150px;
     height: 150px;
-    margin: 10px;
+    margin:  auto 5px;
 
     border:solid 3px #eeeeee;
 }
