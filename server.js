@@ -4,7 +4,7 @@ const methodOverride = require('method-override')
 
 
 const studentRouter  = require('./controllers/student')
-//const heroRouter = require('./controllers/hero')
+const heroRouter = require('./controllers/hero')
 //const villainRouter = require('./controllers/villain')
 
 
@@ -28,7 +28,7 @@ app.set('view engine', 'hbs')
 
 
 app.use('/students', studentRouter);
-// app.use('/hero', heroRouter);
+ app.use('/heroes', heroRouter);
 // app.use('/villain', villainRouter);
 
 app.get('/', (req, res)=> {

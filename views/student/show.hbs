@@ -6,7 +6,7 @@
     </div>
 
     <h2>
-        {{ student.name}}
+        {{ student.name }}
 
     </h2>
     <br>
@@ -53,6 +53,9 @@
 </div>
 
 <a href="/students/{{ student.id }}/edit">Edit This student</a>
+
+<form action="/{{ student.id }}?_method=DELETE" method="POST">
+<input type="submit" value="Delete student">
 
 
 

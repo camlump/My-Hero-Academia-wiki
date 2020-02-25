@@ -1,0 +1,26 @@
+<main>
+    <h2>Create a new hero</h2>
+    <form action="/heroes/{{ hero.id }}?_method=put" method="POST">
+            Hero name:<input type="text" value="{{ hero.heroName }}" name="heroName" placeholder="name"/><br>
+			Gender:<select name="gender">
+                  <option value="unknown">Unknown</option>
+                 <option value="Male">male</option>
+                 <option value="Female">Female</option>
+            </select><br>
+            teacher: <select name="teacher">
+                <option value="yes">yes</option>
+                <option value="no">No</option>
+            </select><br>
+			Hero Status: <select name="heroStatus">
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+                <option value="Former">Former</option>
+            </select><br>
+			img:<input type="text" value="{{ hero.img }}" name="img" placeholder="img"/><br>
+			overview:<input type="text" value="{{ hero.overview }}" name="overview" placeholder="overview"/><br>
+			quirk: <input type="text" value="{{ hero.quirk }}" name="quirk" placeholder="quirk"/><br>
+            quirk Description: <input type="text" value="{{ hero.quirkDescription }}" name="quirkDescription" placeholder="quirk Description"/><br>
+			<input type="submit" value="Add Hero"/><br>
+
+    </form>
+</main>

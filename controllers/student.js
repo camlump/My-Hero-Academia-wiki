@@ -45,5 +45,11 @@ studentRouter.get('/:id/edit', (req, res)=> {
     });
 });
 
+studentRouter.delete('/:id', (req, res)=>{
+    student.findByIdAndRemove(req.params.id).then(()=>{
+        res.redirect('/')
+    });
+});
+
 
 module.exports = studentRouter;

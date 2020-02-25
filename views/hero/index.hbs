@@ -1,0 +1,19 @@
+<main>
+    <h1>All your Heroes</h1>
+
+    {{#each heroes }} 
+    <div class="hero-container">
+        <a href="/heroes/{{ id }}">
+        <img src="{{ img }}"/>
+
+        </a>
+
+		<h3><a href="/heroes/{{ id }}">{{ heroName }}</a></h3>
+
+    </div>
+
+    {{/each}}
+
+
+<a href="/heroes/newHeroes">Create a new hero</a>
+</main>

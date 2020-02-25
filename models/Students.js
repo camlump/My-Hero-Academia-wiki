@@ -33,7 +33,7 @@ const students = new mongoose.Schema({
 
             
 
-            enum: ['1-A', '1-B', 'known'],
+            enum: ['1-A', '1-B', 'unknown'],
         },
     
 

@@ -1,0 +1,64 @@
+<main class="show-page">
+
+<div class="container-show">
+    <div class="img-show">
+    <img src="{{ hero.img }}"/>
+    </div>
+
+    <h2>
+        {{ hero.heroName }}
+
+    </h2>
+    <br>
+    <h3>Gender</h3>
+    
+    <p>
+        {{ hero.gender }}
+    </p>
+    <br>
+    <h3>teacher</h3>
+   
+    <p>
+        {{ hero.teacher }}
+    </p>
+
+    <br>
+
+    <h3>Hero Status</h3>
+
+    <p>
+        {{ hero.heroStatus }}
+    </p>
+    <br>
+
+    <h3>Overview</h3>
+
+    <p>
+        {{ hero.overview }}
+    </p>
+
+    <br>
+    <h3>quirk</h3>
+
+    <p>
+        {{ hero.quirk }}
+    </p>
+
+    <h3>quirk Analysis</h3>
+
+    <p>
+        {{ hero.quirkDescription }}
+    </p>
+
+</div>
+
+<a href="/heroes/{{ hero.id }}/edit">Edit This Hero</a>
+
+<form action="/{{ hero.id }}?_method=DELETE" method="POST">
+<input type="submit" value="Delete hero">
+
+
+
+
+
+</main>
