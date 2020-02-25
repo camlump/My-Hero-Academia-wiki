@@ -18,7 +18,7 @@ villainRouter.get('/newVillains', (req, res)=>{
 
 villainRouter.post('/', (req, res)=>{
     villain.create(req.body).then(()=>{
-        res.redirect('/')
+        res.redirect('/villains')
 
 
     }).catch((err)=>{
@@ -49,7 +49,7 @@ villainRouter.get('/:id/edit', (req, res)=> {
 
 villainRouter.delete('/:id', (req, res)=>{
     villain.findByIdAndRemove(req.params.id).then(()=>{
-        res.redirect('/')
+        res.redirect('/villains')
     });
 });
 

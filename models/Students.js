@@ -58,7 +58,7 @@ const students = new mongoose.Schema({
 
 
 
-module.exports = mongoose.model('Students', students);
+module.exports = mongoose.model('students', students);
 
 
 

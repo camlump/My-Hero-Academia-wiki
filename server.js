@@ -7,11 +7,11 @@ const studentRouter  = require('./controllers/student')
 const heroRouter = require('./controllers/hero')
 const villainRouter = require('./controllers/villain')
 
-// const student = require('../models/Students');
+//  const Student = require('../models/Students');
 
-// const villain = require('../models/villains');
-
-// const hero = require('../models/hero');
+//  const Villain = require('../models/villains');
+ 
+//  const Hero = require('../models/hero');
 
 
 
@@ -38,15 +38,16 @@ app.use('/students', studentRouter);
 app.use('/villains', villainRouter);
 
 app.get('/', (req, res)=> {
-    // let hero = null;
-    // let villain = null;
-    // let student = null;
-    // hero.findbyId().then((foundHero)=>{
-    //     return hero = foundHero;
-    // }).then(villain.findbyId((foundVillain)=>{
-    //     return villain = foundVillain;
-    // })).then(student.findbyId((foundStudent)=>{
-    //     return student = foundStudent
+    // let foundHero = null;
+    // let foundVillain = null;
+    // let foundStudent = null;
+    // Hero.find().then((heros)=>{
+
+    //     return foundHero = hero;
+    // }).then(Villain.findbyId((villain)=>{
+    //     return foundVillain = villain;
+    // })).then(Student.findbyId((student)=>{
+    //     return foundStudent = student
     // }));
    res.render('home');
 });
@@ -57,4 +58,5 @@ const PORT = process.env.PORT || 3000
 app.listen(PORT, ()=> {
     console.log(`App is listening on port ${PORT}`)
 })
+
 

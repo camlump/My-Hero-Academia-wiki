@@ -1,9 +1,33 @@
-
+body{
+    background-color: #47476b;
+    
+}
 .indexPage{
     background-color: #eeeeee;
 }
-.my-navbvar {
-    background-color: #777777;
+/* */
+.navbar{
+    background-color: #52527a !important;
+}
+
+.navbar .navbar-brand{
+    color: #ffffff;
+    font-family: 'Bangers';
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+.navbar .navbar-brand:hover{
+    color:#ffff00;
+}
+.navbar .navbar-nav a{
+    color: #ffffff !important;
+    font-family: 'Asap';
+    letter-spacing: 3px;
+    padding-right: 20px;
+}
+.navbar .navbar-nav a:hover{
+    color: #ffff00 !important;
+    
 }
 /* index title text */
 .indextitle{
