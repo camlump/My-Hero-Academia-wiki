@@ -7,11 +7,11 @@ const studentRouter  = require('./controllers/student')
 const heroRouter = require('./controllers/hero')
 const villainRouter = require('./controllers/villain')
 
-//  const Student = require('../models/Students');
+ const Student = require('./models/Students')
 
-//  const Villain = require('../models/villains');
+ const Villain = require('./models/villains');
  
-//  const Hero = require('../models/hero');
+ const Hero = require('./models/hero');
 
 
 
@@ -38,19 +38,26 @@ app.use('/students', studentRouter);
 app.use('/villains', villainRouter);
 
 app.get('/', (req, res)=> {
-    // let foundHero = null;
-    // let foundVillain = null;
-    // let foundStudent = null;
-    // Hero.find().then((heros)=>{
-
-    //     return foundHero = hero;
-    // }).then(Villain.findbyId((villain)=>{
-    //     return foundVillain = villain;
-    // })).then(Student.findbyId((student)=>{
-    //     return foundStudent = student
-    // }));
-   res.render('home');
+   let foundStudent = null;
+   let foundVillain = null;
+   let foundHero = null;
+   Hero.find().then(heroes=>{
+       let i = Math.floor(Math.random() * heroes.length);
+       foundHero = heroes[i]
+       return Student.find()
+   }).then( (students)=>{
+    let j = Math.floor(Math.random() * students.length)
+    foundStudent = students[j]
+    return Villain.find()
+   }).then( (villains)=>{
+    let k = Math.floor(Math.random() * villains.length)
+    foundVillain = villains[k]
+    res.render('home', { foundHero, foundStudent, foundVillain });
+   }).catch((e)=>{
+       console.log(e);
+   });
 });
+
 
 const PORT = process.env.PORT || 3000
 

@@ -1,7 +1,10 @@
 <main class="indexPage">
+    <div class="indextitle">
     <h1>The Bad Guys</h1>
 <a href="/villains/newVillains">Create a new Villain</a>
 
+    </div>
+    <div class="columns">
     {{#each villains }} 
     <div class="index-container">
         <a href="/villains/{{ id }}">
@@ -15,5 +18,32 @@
 
     {{/each}}
 
+    </div>
+
 
 </main>
+
+{{!-- <main class="indexPage">
+    <div class="indextitle">
+    <h1>The Future of the hero world</h1>
+<a href="/students/newStudent">Create a new student</a>
+
+    </div>
+    <div class="columns">
+    {{#each students }} 
+    <div class="index-container">
+        <a href="/students/{{ id }}">
+        <img class="indexImg" src="{{ img }}"/>
+
+        </a>
+
+		<h3><a href="/students/{{ id }}">{{ name }}</a></h3>
+
+    </div>
+
+    {{/each}}
+
+    </div>
+
+
+</main> --}}

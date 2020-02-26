@@ -2,9 +2,9 @@
     <div class="indextitle">
     <h1>All your Heroes</h1>
 <a href="/heroes/newHeroes">Create a new hero</a>
+</div>
 
-    </div>
-
+<div class="columns">
     {{#each heroes }} 
     <div class="index-container">
         <a href="/heroes/{{ id }}">
@@ -18,5 +18,32 @@
 
     {{/each}}
 
+</div>
+
 
 </main>
+
+{{!-- <main class="indexPage">
+    <div class="indextitle">
+    <h1>The Future of the hero world</h1>
+<a href="/students/newStudent">Create a new student</a>
+
+    </div>
+    <div class="columns">
+    {{#each students }} 
+    <div class="index-container">
+        <a href="/students/{{ id }}">
+        <img class="indexImg" src="{{ img }}"/>
+
+        </a>
+
+		<h3><a href="/students/{{ id }}">{{ name }}</a></h3>
+
+    </div>
+
+    {{/each}}
+
+    </div>
+
+
+</main> --}}
