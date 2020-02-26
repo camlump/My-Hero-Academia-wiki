@@ -184,26 +184,31 @@ body{
 /* start of show Style */
 
 
-
-.container-show{
+.show-page{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 
 .img-show{
+    grid-column: 1 / 2;
     justify-content: center;
     text-align: center;
     margin: 70px;
     
 }
-.container-show{
-    margin-left: 30px;
-    margin-right: 0;
 
+
+.show-text { 
+    grid-column: 2 / 2;
+    background-color: #000000;
+    width: 300px;
+    height: 800px;
+    opacity: .7;
+    text-align: center;
 }
 
-.container-show .red h2{
+.show-text .red h2{
     display: inline-block;
     grid-column: 2;
     font-family: 'Bangers';
@@ -219,12 +224,12 @@ body{
     
 } 
 
-.container-show .white{
+.show-text .white{
     font-family: 'Bangers';
     color: #ffffff;
 }
 
-.container-show p {
+.show-text p {
     font-family: 'Asap';
     color: #dddddd;
 

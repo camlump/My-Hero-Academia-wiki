@@ -1,6 +1,6 @@
 <main class="show-page">
 
-<div class="container-show">
+
     <div class="img-show">
     <img src="{{ villain.img }}"/>
 
@@ -73,10 +73,7 @@
         {{ villain.quirkDescription }}
     </p>
 
-</div>
 
-<a class="create" href="/villains/{{ villain.id }}/edit">Edit This villain</a>
-<form  method="POST" action="/villains/{{ villain.id }}?_method=DELETE" method="POST">
-<input class="delete" type="submit" value="Delete villain">
-</form>
+
+
     </div>
