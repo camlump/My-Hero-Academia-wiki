@@ -167,5 +167,38 @@ body{
 
 
 
+.container-show{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.img-show{
+    
+    grid-column: 1;
+    
+    margin: 70px;
+}
+.container-show{
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+.container-show .red h2{
+    display: inline-block;
+    grid-column: 2;
+    font-family: 'Bangers';
+    color: #ffffff;
+    letter-spacing: 1px;
+    background-color: crimson;
+    margin-top: 20px;
+    width: 220px;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+    
+} 
+
 
 
