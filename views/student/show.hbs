@@ -3,6 +3,11 @@
 <div class="container-show">
     <div class="img-show">
     <img src="{{ student.img }}"/>
+    
+    <a class="create" href="/students/{{ student.id }}/edit">Edit This student</a>
+
+    <form  method="POST" action="/students/{{ student.id }}?_method=DELETE">
+    <input class="delete" type="submit" value="Delete student">
     </div>
     <div class="show-text">
 
@@ -70,10 +75,7 @@
         {{ student.quirkDescription }}
     </p>
 
-<a href="/students/{{ student.id }}/edit">Edit This student</a>
-<form method="POST" action="/students/{{ student.id }}?_method=DELETE">
-<input type="submit" value="Delete student">
-</form>
+
     </div>
 
 </div>

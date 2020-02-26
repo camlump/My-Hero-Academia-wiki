@@ -192,9 +192,8 @@ body{
 
 
 .img-show{
-    
-    grid-column: 1;
-    
+    justify-content: center;
+    text-align: center;
     margin: 70px;
     
 }
@@ -231,5 +230,22 @@ body{
 
 }
 
+.create{
+    font-size: 48;
+    color: yellow;
+    font-family: 'Bangers';
+
+
+}
+
+.create:hover{
+    color: crimson;
+}
+
+.delete{
+    background-color: red;
+    font-family: 'Bangers';
+    color: #ffffff;
+}
 
 
