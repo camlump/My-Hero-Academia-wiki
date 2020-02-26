@@ -76,9 +76,7 @@ body{
     height: 56px;
 }
 
-.navbar .navbar-brand img:hover{
-    color: black!important;
-}
+ 
 
 .navbar .navbar-nav a{
     color: yellow !important;
