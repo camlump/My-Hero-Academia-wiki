@@ -54,13 +54,17 @@
 }
 
 .heading{
-    font-family: 'Asap';
-    top: 60%;
+    font-family:'Bangers';
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    top: 55%;
     width: 35%;
     font-size: 42px;
     position: absolute;
-    color: #ffffff;
+    color: yellow;
     text-align: center;
+    
+    
 }
 .heading:hover{
     color: crimson;
@@ -124,15 +128,15 @@ body{
 }
 
 .indextitle a{
-    font-family: 'Asap';
+    font-family: 'Asap' 700;
     letter-spacing: 3px;
     font-size: 32;
     text-decoration: none;
-    color: cornflowerblue;
+    color:crimson;
 
 }
 .indextitle a:hover{
-    color: crimson;
+    color: yellow;
 }
 
 
@@ -192,6 +196,7 @@ body{
     grid-column: 1;
     
     margin: 70px;
+    
 }
 .container-show{
     margin-left: 30px;
