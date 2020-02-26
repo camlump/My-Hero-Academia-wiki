@@ -162,6 +162,7 @@ body{
     
     border:solid 3px #ffffff;
 }
+
 /* end of index style */
 /* start of show Style */
 
@@ -182,6 +183,7 @@ body{
 .container-show{
     margin-left: 30px;
     margin-right: 0;
+
 }
 
 .container-show .red h2{
@@ -199,6 +201,17 @@ body{
 
     
 } 
+
+.container-show .white{
+    font-family: 'Bangers';
+    color: #ffffff;
+}
+
+.container-show p {
+    font-family: 'Asap';
+    color: #dddddd;
+    
+}
 
 
 
