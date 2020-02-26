@@ -1,9 +1,10 @@
-<main>
+<main clsss ="student Background">
 
-<div class="student-container-show">
-    <div class="student-img-show">
+<div class="container-show">
+    <div class="img-show">
     <img src="{{ student.img}}"/>
     </div>
+    <div class="show-text">
 
     <h2>
         {{ student.name }}
@@ -53,6 +54,7 @@
 </div>
 
 <a href="/students/{{ student.id }}/edit">Edit This student</a>
+    </div>
 
 <form method="POST" action="/students/{{ student.id }}?_method=DELETE">
 <input type="submit" value="Delete student">

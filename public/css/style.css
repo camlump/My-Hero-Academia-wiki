@@ -1,4 +1,4 @@
-
+/* start of Home style */
 .homebackground {
     display: flex;
     flex-direction: row;
@@ -56,10 +56,8 @@ body{
     background-color: #131339;
     
 }
-.indexPage{
-    background-color: #eeeeee;
-}
-/* */
+/* End of home style */
+/* Start of Nav Style */
 .navbar{
     background-color: #000000!important;
     opacity: .6 !important;
@@ -76,7 +74,7 @@ body{
     height: 56px;
 }
 
- 
+
 
 .navbar .navbar-nav a{
     color: yellow !important;
@@ -91,7 +89,11 @@ body{
     color: crimson !important;
     
 }
-/* index title text */
+/* End of Nav bar style */
+/* Start of index Style */
+.indexPage{
+    background-color: #eeeeee;
+}
 .indextitle{
     display: grid;
     grid-template-columns:repeat(1,1hr);
@@ -130,21 +132,16 @@ body{
     padding-right: 40px;
     float: right;
 }
-/* end of indext title text */
 .columns {
-   display: grid;
-   grid-template-columns: repeat(8, 1fr);
-   grid-template-rows: repeat(8, 1fr);
-   grid-gap: 8px;
-   text-align: center;
-
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 8px;
+    text-align: center;
+    
     
     
 }
-
-    
-
-
 .indexPage h3 a {
     text-align: center;
     color: black;
@@ -162,9 +159,13 @@ body{
     width: 150px;
     height: 150px;
     margin:  auto 5px;
-
+    
     border:solid 3px #ffffff;
 }
+/* end of index style */
+/* start of show Style */
+
+
 
 
 
