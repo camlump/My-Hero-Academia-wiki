@@ -261,13 +261,24 @@ body{
 /* start of form style */
 .createCharacter{
     text-align: center;
+    display: grid;
+    grid-template-rows: 50px 600px;
+   
 }
 
-
-.createCharacter h2{
+.createCharacter .white{
+    grid-row: 2 / 2;
+    color: white;
+    margin: 30px;
+}
+.createCharacter .red{
+    grid-row: 1 / 2;
+    top: 10px;
     font-family: 'Bangers';
     color: #ffffff;
-    background-color: crimson;
 }
 
+.createCharacter .red .highlight{
+    background-color: crimson;
+}
 
