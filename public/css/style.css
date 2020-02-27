@@ -256,4 +256,18 @@ body{
     color: #ffffff;
 }
 
+/* end of the show style */
+
+/* start of form style */
+.createCharacter{
+    text-align: center;
+}
+
+
+.createCharacter h2{
+    font-family: 'Bangers';
+    color: #ffffff;
+    background-color: crimson;
+}
+
 
