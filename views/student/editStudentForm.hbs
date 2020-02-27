@@ -1,20 +1,20 @@
-<main class="createChsracter">
+<main class="createCharacter">
+ <h2 class="red"><span class="highlight">Edit this Character</span></h2>
+<form class="white" action="/students/{{ student.id}}?_method=PUT" method="POST">
 
-<form action="/students/{{ student.id}}?_method=PUT" method="POST">
-
-name:<input type="text" name="name" value="{{ student.name }}" placeholder="name"/><br>
-			Gender:<select name="gender">
+            <input type="text" name="name" value="{{ student.name }}" placeholder="name"/><br><br>
+			<select class="delete" name="gender">
                   <option value="unknown">Unknown</option>
                  <option value="Male">male</option>
                  <option value="Female">Female</option>
-            </select><br>
-            class:<input type="text" value="{{ student.class }}" name="class" placeholder="class"/><br>
-			school:<input type="text" value="{{ student.school }}" name="school" placeholder="school"/><br>
-			img:<input type="text" value="{{ student.img }}" name="img" placeholder="img"/><br>
-			overview:<input type="text" value="{{ student.overview }}" name="overview" placeholder="overview"/><br>
-			quirk: <input type="text" value="{{ student.quirk }}" name="quirk" placeholder="quirk"/><br>
-            quirk Description: <input type="text" value="{{ student.quirkDescription }}" name="quirkDescription" placeholder="quirk Description"/><br>
-			<input type="submit" value="Edit student"/><br>
+            </select><br><br>
+            <input type="text" value="{{ student.class }}" name="class" placeholder="class"/><br><br>
+			<input type="text" value="{{ student.school }}" name="school" placeholder="school"/><br><br>
+			<input type="text" value="{{ student.img }}" name="img" placeholder="img"/><br><br>
+			<input type="text" value="{{ student.overview }}" name="overview" placeholder="overview"/><br><br>
+			<input type="text" value="{{ student.quirk }}" name="quirk" placeholder="quirk"/><br><br>
+            <input type="text" value="{{ student.quirkDescription }}" name="quirkDescription" placeholder="quirk Description"/><br><br>
+			<input class="delete" type="submit" value="Edit student"/><br>
 
 </form>
 </main>

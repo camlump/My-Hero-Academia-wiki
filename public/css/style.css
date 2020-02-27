@@ -262,23 +262,39 @@ body{
 .createCharacter{
     text-align: center;
     display: grid;
-    grid-template-rows: 50px 600px;
+    grid-template-rows: 40px 50px 600px;
    
 }
 
 .createCharacter .white{
-    grid-row: 2 / 2;
+    grid-row: 3 / 3;
     color: white;
     margin: 30px;
+    margin: 10px;
 }
 .createCharacter .red{
-    grid-row: 1 / 2;
-    top: 10px;
+    grid-row: 2 / 3;
+    top: 20px;
     font-family: 'Bangers';
     color: #ffffff;
+   
+    
 }
 
 .createCharacter .red .highlight{
+    
     background-color: crimson;
+    
+}
+
+.createCharacter .red .white input{
+    margin-bottom: 15px;
+    
+    
+}
+
+.createCharacter .title{
+    color: white;
+    font-family: 'Bangers';
 }
 

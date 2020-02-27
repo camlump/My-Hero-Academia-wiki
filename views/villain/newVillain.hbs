@@ -1,19 +1,19 @@
-<main>
-    <h2>Create a new Villain</h2>
-    <form action="/villains" method="POST">
-             name:<input type="text" name="name" placeholder="name"/><br>
-			Gender:<select name="gender">
+<main class="createCharacter">
+   <h2 class="red"><span class="highlight">Create a Villian</span></h2>
+    <form class="white" action="/villains" method="POST">
+             <input type="text" name="name" placeholder="name"/><br><br>
+			<select class="delete" name="gender">
                   <option value="unknown">Unknown</option>
                  <option value="Male">male</option>
                  <option value="Female">Female</option>
-            </select><br>
-            legal status: <input type="text" name="legalStatus" placeholder="Legal Status"><br>
-			Affiliation: <input type="text" name="affiliation" placeholder="Affiliation"><br>
-			img:<input type="text" name="img" placeholder="img"/><br>
-			overview:<input type="text" name="overview" placeholder="overview"/><br>
-			quirk: <input type="text" name="quirk" placeholder="quirk"/><br>
-            quirk Description: <input type="text" name="quirkDescription" placeholder="quirk Description"/><br>
-			<input type="submit" value="Add Villian"/><br>
+            </select><br><br>
+             <input type="text" name="legalStatus" placeholder="Legal Status"><br><br>
+		     <input type="text" name="affiliation" placeholder="Affiliation"><br><br>
+			<input type="text" name="img" placeholder="img"/><br><br>
+			<input type="text" name="overview" placeholder="overview"/><br><br>
+		 <input type="text" name="quirk" placeholder="quirk"/><br><br>
+            <input type="text" name="quirkDescription" placeholder="quirk Description"/><br><br>
+			<input class="delete" type="submit" value="Add Villian"/><br><br>
 
     </form>
 </main>
