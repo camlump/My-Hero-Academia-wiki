@@ -187,10 +187,12 @@ body{
 .show-page{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
 }
 
 
 .img-show{
+    display: inherit;
     grid-column: 1 / 2;
     justify-content: center;
     text-align: center;
@@ -200,10 +202,11 @@ body{
 
 
 .show-text { 
+    
     grid-column: 2 / 2;
     background-color: #000000;
     width: 300px;
-    height: 800px;
+    height: 100%;
     opacity: .7;
     text-align: center;
 }
