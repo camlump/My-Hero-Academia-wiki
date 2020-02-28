@@ -1,6 +1,6 @@
 # This Project Resembles a Wiki page of The Anime TV series My Hero Academia.
 
-https://dashboard.heroku.com/apps/myherofanpage
+https://myherofanpage.herokuapp.com/
 
 ## Project Overview
 
