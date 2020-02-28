@@ -10,3 +10,8 @@ This Project is a MVP(Minimun Viable Product), that was created using Mongodb, E
    ![pic1](screenshots/Home.png)
    ![pic2](screenshots/index.png)
    ![pic3](screenshots/Show.png)
+
+   ## Here is my ERD Screenshot
+   ![ERD](screenshots/ERD.png)
+
+   
