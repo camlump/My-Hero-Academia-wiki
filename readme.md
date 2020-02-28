@@ -26,6 +26,6 @@ This Project is a MVP(Minimun Viable Product), that was created using Mongodb, E
    3. In addition to addina more complex models to the app, in the future I'm working towards adding permissions so that not just anyone can go in and add and delete information from the database.
 
 
-## Here is My planning board
+## Here is My project board
 
 https://trello.com/b/bEqD0xTc/myhero-api
