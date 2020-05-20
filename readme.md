@@ -29,3 +29,93 @@ This Project is a MVP(Minimun Viable Product), that was created using Mongodb, E
 ## Here is My project board
 
 https://trello.com/b/bEqD0xTc/myhero-api
+
+
+{
+                     this.state.homework.map((homework, i) => {
+                         return (
+                             
+                             <div key={ i }>
+                             
+                                
+
+                                <Link to={'homework/'+ homework._id }>{ homework.name }</Link>
+                                
+                                
+                            </div>
+                            
+                        )
+                    })
+                }
+
+
+                          {
+                     this.state.homework.map((homework, i) => {
+                         return (
+                             
+                             <div key={ i }>
+                             
+                             <table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      
+      <th scope="col">Assigned</th>
+      <th scope="col">Name</th>
+      <th scope="col">Finish</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+
+      <th scope="row">1</th>
+      <td>
+        <Link to={'homework/'+ homework._id }>{ homework.name }</Link>
+
+      </td>
+      <td>
+          <button onClick={ this.deletehomework}>Done</button>
+      </td>
+    </tr>
+     
+  </tbody>
+</table>
+
+
+
+      {
+                     this.state.homework.map((homework, i) => {
+                         return (
+                             
+                             <div key={ i }>
+                             
+                             <table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      
+      <th scope="col">Assigned</th>
+      <th scope="col">Name</th>
+      <th scope="col">Finis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+
+      <th scope="row">1</th>
+      <td>
+        <Link to={'homework/'+ homework._id }>{ homework.name }</Link>
+
+      </td>
+      <td>
+          <button onClick={ this.deletehomework}>Done</button>
+      </td>
+    </tr>
+     
+  </tbody>
+</table>
+                                
+                                
+                            </div>
+                            
+                        )
+                    })
+                }
